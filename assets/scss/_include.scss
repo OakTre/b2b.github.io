@@ -1,0 +1,103 @@
+.fontBold {
+    font-weight: bold;
+}
+
+.border_dashed {
+    display: block;
+    // padding-bottom: 2px;
+    border-bottom: 1px dotted #1F243C;
+    font-weight: normal;
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: none;
+    }
+}
+
+.title {
+    font-family: "Scada", sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 31px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.features {
+    font-size: 23px;
+    line-height: 30px;
+    background-color: #5A8833;
+    border-radius: 0 13px 13px 0;
+    padding: 9px 38px 9px 19px;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.icon-tip {
+    position: absolute;
+    font-size: 68px;
+
+    &.tip-title {
+        top: -44px;
+        left: -55px;
+    }
+
+    &.tip-list {
+        bottom: -37px;
+        right: -70px;
+    }
+}
+
+.button {
+    position: relative;
+    font-size: 15px;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 32px 21px;
+    background-color: #FEB05C;
+    border-radius: 5px;
+    border-bottom: 1px solid #FDAF5B;
+    transition: 0.5s;
+    background-image: linear-gradient(to bottom, #FDAF5B 0%, #E26A23 143%, #FF8008 121%);
+    text-align: center;
+    background-size: 200% auto;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 296px;
+        height: 105px;
+        background-color: transparent;
+        border: 1px solid #F0B892;
+        border-radius: 5px;
+    }
+}
+
+.b2bCreative {
+    &__img {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        font-size: 14px;
+        & a {
+            color: #739355;
+            border-bottom: 1px dashed  #739355;
+
+            &:hover {
+                border-bottom: none;
+            }
+        }
+    }
+}

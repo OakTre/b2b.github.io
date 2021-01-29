@@ -1,0 +1,51 @@
+.hambergerIcon {
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    background-color:#1F243C;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: all ease 0.5s;
+    cursor: pointer;
+    // z-index: 1000;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        height: inherit;
+        border-radius: inherit;
+        background-color: inherit;
+        margin: auto;
+        width: 50%;
+        transition: all ease 0.5s;
+    }
+
+    &::before {
+        top: -10px;
+        left: 0;
+        transform-origin: left;
+    }
+
+    &::after {
+        bottom: -10px;
+        right: 0;
+        transform-origin: right;
+    }
+
+    &.open {
+        transform: translate(-50%, -50%) rotate(135deg);
+
+        &::before {
+            top: 0;
+            transform: translateX(100%) rotate(-90deg);
+        }
+
+        &::after {
+            bottom: 0;
+            transform: translateX(-100%) rotate(-90deg);
+        }
+    }
+}
